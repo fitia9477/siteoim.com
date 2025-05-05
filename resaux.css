@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Tagesschrift&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source sans Pro', sans-serif;
+}
+
+body {
+    display: grid;
+    height: 100vh;
+    place-items: center;
+    background: linear-gradient(to bottom left, #d5df16,#5b3adf);
+}
+
+.main .button {
+    background-color: #fff;
+    width: 70px;
+    height: 70px;
+    float: left;
+    border-radius: 50px;
+    margin: 0 12px;  
+    overflow: hidden;
+    cursor: pointer;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15s);  
+    transition: all .3s ease-in-out;
+}
+
+.main .button:hover {
+    width: 160px;
+}
+
+.main .button:nth-child(1):hover {
+    background-color: #372899;
+    color: #fff;
+}
+
+.main .button:nth-child(2):hover {
+    background-color: #d658a8;
+    color: #fff;
+
+}.main .button:nth-child(3):hover {
+    background-color: #020106;
+    color: #fff;
+}
+
+.button .s-icon {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    text-align: center;
+    transition: all .3s ease-in-out;
+
+}
+
+.button .s-icon i {
+    font-size: 24px;
+
+}
+
+.button span {
+    font-size: 18px;
+    font-weight: 600;
+
+}
+
+.logo{
+    text-align: center;
+    color: #653bc0;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 70px;
+    animation: anime 1s ease-in-out;
+}
+
+.logo {
+    font-size: 60px;
+    display: flex;
+  }
+  
+  .wavy-text {
+    font-size: 60px;
+    display: flex;
+  }
+  
+  .wavy-text span {
+    animation: wave 1.5s infinite;
+    display: inline-block;
+  }
+
+  

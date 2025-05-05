@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Tagesschrift&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-style: normal;
+}
+body {
+height: 100vh;
+position: relative;
+background: url("IMG_4781.JPG");    
+background-size: cover;
+background-repeat: no-repeat;
+overflow: hidden;
+}
+
+.logo{
+    text-align: center;
+    color: #200a50;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 200px;
+    animation: anime 1s ease-in-out;
+}
+
+.home_texte{
+    position: absolute;
+    bottom: 20px;
+    width: 500px;
+    font-size: 85 px;
+    color: #271054;
+    animation: anime 2s ease-in-out;
+}
+
+button{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    border: transparent;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 0 20px 20px 0;
+    color: #000;
+    cursor: pointer;
+    z-index: 1;
+    text-transform: uppercase; 
+    animation: anime 1.5s ease-in-out;    
+
+}
+    
+/*animation*/
+
+@keyframes anime {
+    0%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity:  1;
+
+    }
+}
+
+/*menu*/
+
+.menu {
+    z-index: 100;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    list-style: none; 
+    height: 100vh;
+    width: 0%;
+    overflow: hidden;
+    transition: 0.25s ease-out;
+    display: flex;
+}   
+
+.menu img {
+    height: 100%;
+    width: 65%;
+    object-fit: cover;
+    border-radius: 0 60px 60px 0 ;
+}
+
+.closebtn {
+    color: #fff;
+    background-color: #000 ;
+    display: none;
+    z-index: 200;
+}
+
+.menu div {
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.menu li {
+    width: fit-content;
+    margin: 10px 20px ;
+}
+
+.menu li a { 
+    width: fit-content;
+    color: #000;
+    text-decoration: 0;
+    text-transform: uppercase;
+    font-size: 50px;
+    position: relative;
+    font-family:'Rubik Glitch',cursive ;
+}
+
+.menu li a:hover:after {
+    content: "@click";
+    font-size: 12px;
+}
+
+.menu li a:before {
+     content: "";
+     bottom: 3px;
+     position: absolute;
+     width: 0px;
+     height: 4px;
+     border-radius: 6px;
+     background-color: #1b0707;
+     transition: 0.5s;
+}
+
+.menu li a:hover:before {
+    width: 100%;
+}
